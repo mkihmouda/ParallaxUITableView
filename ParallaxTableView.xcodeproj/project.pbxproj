@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		0492A6D91DCA73C900D99264 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0492A6D81DCA73C900D99264 /* AppDelegate.swift */; };
-		0492A6DB1DCA73C900D99264 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0492A6DA1DCA73C900D99264 /* ViewController.swift */; };
+		0492A6DB1DCA73C900D99264 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0492A6DA1DCA73C900D99264 /* MainVC.swift */; };
 		0492A6DE1DCA73C900D99264 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0492A6DC1DCA73C900D99264 /* Main.storyboard */; };
 		0492A6E01DCA73C900D99264 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0492A6DF1DCA73C900D99264 /* Assets.xcassets */; };
 		0492A6E31DCA73C900D99264 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0492A6E11DCA73C900D99264 /* LaunchScreen.storyboard */; };
 		0492A6EE1DCA73C900D99264 /* ParallaxTableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0492A6ED1DCA73C900D99264 /* ParallaxTableViewTests.swift */; };
 		0492A6F91DCA73C900D99264 /* ParallaxTableViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0492A6F81DCA73C900D99264 /* ParallaxTableViewUITests.swift */; };
+		0492A70C1DCA780B00D99264 /* ParallaxCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0492A70B1DCA780B00D99264 /* ParallaxCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,7 @@
 /* Begin PBXFileReference section */
 		0492A6D51DCA73C900D99264 /* ParallaxTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParallaxTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0492A6D81DCA73C900D99264 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0492A6DA1DCA73C900D99264 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0492A6DA1DCA73C900D99264 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		0492A6DD1DCA73C900D99264 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0492A6DF1DCA73C900D99264 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0492A6E21DCA73C900D99264 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,7 @@
 		0492A6F41DCA73C900D99264 /* ParallaxTableViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParallaxTableViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0492A6F81DCA73C900D99264 /* ParallaxTableViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallaxTableViewUITests.swift; sourceTree = "<group>"; };
 		0492A6FA1DCA73C900D99264 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0492A70B1DCA780B00D99264 /* ParallaxCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParallaxCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +99,9 @@
 		0492A6D71DCA73C900D99264 /* ParallaxTableView */ = {
 			isa = PBXGroup;
 			children = (
+				0492A7081DCA73E800D99264 /* Controller */,
+				0492A7071DCA73E400D99264 /* View */,
 				0492A6D81DCA73C900D99264 /* AppDelegate.swift */,
-				0492A6DA1DCA73C900D99264 /* ViewController.swift */,
 				0492A6DC1DCA73C900D99264 /* Main.storyboard */,
 				0492A6DF1DCA73C900D99264 /* Assets.xcassets */,
 				0492A6E11DCA73C900D99264 /* LaunchScreen.storyboard */,
@@ -123,6 +126,22 @@
 				0492A6FA1DCA73C900D99264 /* Info.plist */,
 			);
 			path = ParallaxTableViewUITests;
+			sourceTree = "<group>";
+		};
+		0492A7071DCA73E400D99264 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0492A70B1DCA780B00D99264 /* ParallaxCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		0492A7081DCA73E800D99264 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0492A6DA1DCA73C900D99264 /* MainVC.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,7 +281,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0492A6DB1DCA73C900D99264 /* ViewController.swift in Sources */,
+				0492A70C1DCA780B00D99264 /* ParallaxCell.swift in Sources */,
+				0492A6DB1DCA73C900D99264 /* MainVC.swift in Sources */,
 				0492A6D91DCA73C900D99264 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
