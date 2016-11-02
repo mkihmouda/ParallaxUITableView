@@ -22,7 +22,7 @@ You can simple drag the files <b>1. MainVC.swift</b><b> 2. ParallaxCell.swift</b
  
 <p align="center">
  
-  <img src="http://katikids.com/Parallax.png" height="850" width="600">
+  <img src="http://katikids.com/Parallax.png" height="650" width="400">
  
 </p>
 
