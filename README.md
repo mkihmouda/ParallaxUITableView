@@ -17,7 +17,11 @@ Swift 3.0
  
 #### Manual
 
-You can simple drag the files <b>1. MainVC.swift</b><b> 2. ParallaxCell.swift</b>3. MainVC ViewContrller from Stroyboard to your target project.
+You can simple drag the files : 
+<b> 1. MainVC.swift</b>
+<b> 2. ParallaxCell.swift</b>
+<b> 3. MainVC ViewContrller</b>
+from Stroyboard to your target project.
 
  
 <p align="center">
