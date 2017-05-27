@@ -26,7 +26,7 @@ from Stroyboard to your target project.
  
 <p align="center">
  
-  <img src="http://appsgeeks.de/Parallax.png" height="650" width="400">
+  <img src="http://mawaeed.96.lt/uploads/Parallax.png" height="650" width="400">
  
 </p>
 
